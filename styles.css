@@ -1,0 +1,71 @@
+/* |||| FONT-FACE |||| */
+
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/static/RedHatDisplay-Black.ttf") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/static/RedHatDisplay-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Red Har Md";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/static/RedHatDisplay-Medium.ttf") format("woff2");
+}
+
+/* |||| ROOT |||| */
+
+:root {
+    /* COLORS */
+
+}
+
+/* |||| RESET |||| */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  background: none;
+  border-color: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
