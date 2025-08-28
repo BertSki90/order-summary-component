@@ -145,7 +145,7 @@ h5 {
 /* |||| CARD |||| */
 
 .card {
-  align-self: start;
+  align-self: center;
   background-color: var(--white);
   border-radius: 20px;
   text-align: center;
@@ -172,7 +172,7 @@ article {
   background-color: var(--blue--50);
   border-radius: 11px;
   justify-content: space-between;
-  margin-block-end: 24px;
+  /* margin-block-end: 24px; */
   padding: 16px;
 }
 
@@ -199,5 +199,40 @@ a {
 
 button {
   display: block;
-  margin: 0 auto;
+  font-family: "Red Hat Black", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 165%;
+  margin: 24px auto 0;
+}
+
+.btn-pay {
+  color: var(--white);
+  background-color: var(--blue--700);
+  border-radius: 11px;
+  box-shadow: 0 24px 20px 0 var(--blue--150);
+  padding: 12.5px 0;
+  width: 100%;
+}
+
+.btn-cancel {
+  color: var(--grey--600);
+}
+
+/* |||| ACTIVE STATES |||| */
+
+button:hover, 
+a:hover {
+  cursor: pointer;
+} 
+
+a:hover {
+  color: var(--purple--500);
+}
+
+.btn-pay:hover {
+  background-color: var(--purple--500);
+}
+
+.btn-cancel:hover {
+  color: var(--blue--950);
 }
