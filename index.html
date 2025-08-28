@@ -17,15 +17,41 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
+    <!-- BACKGROUND -->
+    <!-- class="bg-pattern" -->
+    <picture>
+      <img
+        class="bg-pattern"
+        src="./images/pattern-background-mobile.svg"
+        alt=""
+      />
+    </picture>
+
+    <!-- TITLE -->
+
+    <header>
+      <h1 class="sr-only">Order Summary Component</h1>
+    </header>
+
     <main>
       <!-- BACKGROUND -->
-      <picture class="bg-image">
-        <img src="./images/pattern-background-mobile.svg" alt="" />
-      </picture>
+      <!-- class="bg-pattern" -->
+      <!-- <picture>
+        <img
+          class="bg-pattern"
+          src="./images/pattern-background-mobile.svg"
+          alt=""
+        />
+      </picture> -->
+
       <!-- CARD -->
       <section class="card">
         <picture>
-          <img src="./images/illustration-hero.svg" alt="" />
+          <img
+            class="image-top"
+            src="./images/illustration-hero.svg"
+            alt="Cartoon of a girl dancing and listening to her Ipod."
+          />
         </picture>
 
         <article>
@@ -36,12 +62,19 @@
           </h3>
 
           <!-- FLEX CONTAINER - subscription details -->
-          <div class="flex-container">
-            <picture>
+          <div class="flex-container current-subscription">
+            <!-- <picture>
               <img src="./images/icon-music.svg" alt="" />
-            </picture>
-            <h4>Annual Plan</h4>
-            <h5>$59.99/year</h5>
+            </picture> -->
+            <figure class="flex-container">
+              <img class="icon-music" src="./images/icon-music.svg" alt="" />
+              <span class="block-container">
+                <h4>Annual Plan</h4>
+                <h5>$59.99/year</h5>
+              </span>
+            </figure>
+            <!-- <h4>Annual Plan</h4>
+            <h5>$59.99/year</h5> -->
             <a href="#">Change</a>
           </div>
 
