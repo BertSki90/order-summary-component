@@ -1,26 +1,26 @@
 /* |||| FONT-FACE |||| */
 
 @font-face {
-  font-display: swap;
+  /* font-display: swap; */
   font-family: "Red Hat Black";
-  font-style: normal;
-  font-weight: 900;
+  /* font-style: normal; */
+  /* font-weight: 900; */
   src: url("./fonts/static/RedHatDisplay-Black.ttf") format("woff2");
 }
 
 @font-face {
-  font-display: swap;
+  /* font-display: swap; */
   font-family: "Red Hat Bold";
-  font-style: normal;
-  font-weight: 700;
+  /* font-style: normal; */
+  /* font-weight: 700; */
   src: url("./fonts/static/RedHatDisplay-Bold.ttf") format("woff2");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Red Har Md";
-  font-style: normal;
-  font-weight: 500;
+  /* font-display: swap; */
+  font-family: "Red Hat Md";
+  /* font-style: normal; */
+  /* font-weight: 500; */
   src: url("./fonts/static/RedHatDisplay-Medium.ttf") format("woff2");
 }
 
@@ -28,7 +28,17 @@
 
 :root {
     /* COLORS */
+    --black: hsl(0, 0%, 0%);
+    --blue--50: hsl(225, 100%, 98%);
+    --blue--100: hsl(225, 100%, 94%);
+    --blue--150: hsl(224, 100%, 92%);
+    --blue--700: hsl(245, 75%, 52%);
+    --blue--950: hsl(223, 47%, 23%);
+    --grey--600: hsl(224, 23%, 55%);
+    --purple--500: hsl(245, 83%, 68%);
+    --white: hsl(0, 100%, 100%);
 
+    
 }
 
 /* |||| RESET |||| */
@@ -67,4 +77,127 @@ a {
 ul,
 ol {
   list-style-type: none;
+}
+
+
+/* |||| GENERAL |||| */
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+main {
+  background-color: var(--blue--50);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+/* |||| BACKGROUND |||| */
+
+.bg-pattern {
+  /* align-self: normal; */
+  object-fit: contain;
+  position: absolute;
+  width: 100vw;
+  z-index: 5;
+}
+
+/* |||| TEXT |||| */
+
+h2 {
+  color: var(--blue--950);
+  font-family: "Red Hat Black", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 135%;
+  margin-block-end: 16px;
+}
+
+h3 {
+  color: var(--grey--600);
+  font-family: "Red Hat Md", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 165%;
+  margin-block-end: 24px;
+}
+
+h4 {
+  color: var(--blue--950);
+  font-family: "Red Hat Black", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 165%;
+}
+
+h5 {
+  color: var(--grey--600);
+  font-family: "Red Hat Md", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 165%;
+}
+
+/* |||| CARD |||| */
+
+.card {
+  align-self: start;
+  background-color: var(--white);
+  border-radius: 20px;
+  text-align: center;
+  /* max-width: 327px; */
+  max-width: 39ch;
+  z-index: 10;
+}
+
+.image-top {
+  border-radius: 20px 20px 0 0;
+}
+
+article {
+  padding: 32px 24px 26px;
+}
+
+/* CURRENT SUBSCRIPTION */
+
+.flex-container {
+  display: flex;
+}
+
+.current-subscription {
+  background-color: var(--blue--50);
+  border-radius: 11px;
+  justify-content: space-between;
+  margin-block-end: 24px;
+  padding: 16px;
+}
+
+.icon-music {
+  margin-inline-end: 16px;
+}
+
+span {
+  display: block;
+  text-align: start;
+}
+
+/* LINK */
+
+a {
+  align-self: center;
+  color: var(--blue--700);
+  font-family: "Red Hat Bold", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 165%;
+}
+
+/* BUTTONS */
+
+button {
+  display: block;
+  margin: 0 auto;
 }
