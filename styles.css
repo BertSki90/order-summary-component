@@ -159,10 +159,10 @@ h5 {
 }
 
 article {
-  padding: 32px 24px 26px;
+  margin: 32px 24px 26px;
 }
 
-/* CURRENT SUBSCRIPTION */
+/* CURRENT SUBSCRIPTION AREA */
 
 .flex-container {
   display: flex;
@@ -185,9 +185,9 @@ span {
   text-align: start;
 }
 
-/* LINK */
+/* BUTTONS */
 
-a {
+.btn-change {
   align-self: center;
   color: var(--blue--700);
   font-family: "Red Hat Bold", Arial, sans-serif;
@@ -195,9 +195,7 @@ a {
   line-height: 165%;
 }
 
-/* BUTTONS */
-
-button {
+.btn-checkout {
   display: block;
   font-family: "Red Hat Black", Arial, sans-serif;
   font-size: 15px;
@@ -218,21 +216,97 @@ button {
   color: var(--grey--600);
 }
 
-/* |||| ACTIVE STATES |||| */
+/* |||| BUTTON STATES |||| */
 
-button:hover, 
-a:hover {
+button:hover,
+button:active {
   cursor: pointer;
 } 
 
-a:hover {
+.btn-change:hover,
+.btn-change:active {
   color: var(--purple--500);
 }
 
-.btn-pay:hover {
+.btn-pay:hover,
+.btn-pay:active {
   background-color: var(--purple--500);
 }
 
-.btn-cancel:hover {
+.btn-cancel:hover,
+.btn-cancel:active {
   color: var(--blue--950);
+}
+
+/* |||| MEDIA QUERRIES |||| */
+
+/* TABLET SCREEN */
+
+@media screen and (min-width:750px) {
+
+  /* |||| BACKGROUND |||| */
+
+  .bg-pattern {
+    top: -70px;
+  }
+
+  /* |||| TEXT |||| */
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 0 auto 16px;
+    max-width: 30ch;
+  }
+  
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  /* |||| CARD |||| */
+
+  .card {
+    max-width: 450px;
+  }
+
+  article {
+    margin: 48px 48px 43px;
+  }
+
+  .current-subscription {
+    padding: 24px;
+  }
+
+  /* BUTTONS */
+
+  .btn-change,
+  .btn-checkout {
+    font-size: 16px;
+  }
+
+  .btn-checkout {
+    margin-block-start: 32px;
+  }
+
+  .btn-pay {
+    padding: 12px 0;
+  }
+}
+
+/* DESKTOP SCREEN */
+
+@media screen and (min-width: 1200px) {
+  
+  /* |||| BACKGROUND |||| */
+
+  .bg-pattern {
+    top: -115px;
+  }
 }
