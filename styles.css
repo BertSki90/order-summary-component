@@ -37,8 +37,20 @@
     --grey--600: hsl(224, 23%, 55%);
     --purple--500: hsl(245, 83%, 68%);
     --white: hsl(0, 100%, 100%);
-
     
+    /* FONT SIZES */
+    /* --font-size--xl: 28px; */
+    /* --font-size--lg: 22px; */
+    /* --font-size--md: 16px; */
+    /* --font-size--sm: 15px; */
+    --font-size--xl: 1.75rem;
+    --font-size--lg: 1.375rem;
+    --font-size--md: 1rem;
+    --font-size--sm: 0.938rem;
+
+    /* RADIUS */
+    --radius--lg: 20px;
+    --radius--sm: 11px;
 }
 
 /* |||| RESET |||| */
@@ -82,13 +94,8 @@ ol {
 
 /* |||| GENERAL |||| */
 
-.sr-only {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  top: auto;
-  overflow: hidden;
+html {
+  font-size: 16px;
 }
 
 main {
@@ -101,11 +108,19 @@ main {
 /* |||| BACKGROUND |||| */
 
 .bg-pattern {
-  /* align-self: normal; */
   object-fit: contain;
   position: absolute;
   width: 100vw;
   z-index: 5;
+}
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
 
 /* |||| TEXT |||| */
@@ -113,32 +128,29 @@ main {
 h2 {
   color: var(--blue--950);
   font-family: "Red Hat Black", Arial, sans-serif;
-  font-size: 22px;
+  font-size: var(--font-size--lg);
   line-height: 135%;
-  margin-block-end: 16px;
+  /* margin-block-end: 16px; */
+  margin-block-end: 0.727em;
 }
 
 h3 {
+  /* margin-block-end: 24px; */
+  margin-block-end: 1.6em;
+}
+
+h3, h5 {
   color: var(--grey--600);
   font-family: "Red Hat Md", Arial, sans-serif;
-  font-size: 15px;
+  font-size: var(--font-size--sm);
   font-weight: 500;
   line-height: 165%;
-  margin-block-end: 24px;
 }
 
 h4 {
   color: var(--blue--950);
   font-family: "Red Hat Black", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 165%;
-}
-
-h5 {
-  color: var(--grey--600);
-  font-family: "Red Hat Md", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: var(--font-size--sm);
   line-height: 165%;
 }
 
@@ -147,7 +159,8 @@ h5 {
 .card {
   align-self: center;
   background-color: var(--white);
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-radius: var(--radius--lg);
   text-align: center;
   /* max-width: 327px; */
   max-width: 39ch;
@@ -155,11 +168,12 @@ h5 {
 }
 
 .image-top {
-  border-radius: 20px 20px 0 0;
+  border-radius: var(--radius--lg) var(--radius--lg) 0 0;
 }
 
 article {
-  margin: 32px 24px 26px;
+  /* margin: 32px 24px 26px; */
+  margin: 2em 1.5em 1.625em;
 }
 
 /* CURRENT SUBSCRIPTION AREA */
@@ -170,14 +184,16 @@ article {
 
 .current-subscription {
   background-color: var(--blue--50);
-  border-radius: 11px;
+  /* border-radius: 11px; */
+  border-radius: var(--radius--sm);
   justify-content: space-between;
-  /* margin-block-end: 24px; */
-  padding: 16px;
+  /* padding: 16px; */
+  padding: 1em;
 }
 
 .icon-music {
-  margin-inline-end: 16px;
+  /* margin-inline-end: 16px; */
+  margin-inline-end: 1em;
 }
 
 span {
@@ -191,24 +207,28 @@ span {
   align-self: center;
   color: var(--blue--700);
   font-family: "Red Hat Bold", Arial, sans-serif;
-  font-size: 15px;
+  font-size: var(--font-size--sm);
   line-height: 165%;
 }
 
 .btn-checkout {
   display: block;
   font-family: "Red Hat Black", Arial, sans-serif;
-  font-size: 15px;
+  font-size: var(--font-size--sm);
   line-height: 165%;
-  margin: 24px auto 0;
+  /* margin: 24px auto 0; */
+  margin: 1.5em auto 0;
 }
 
 .btn-pay {
   color: var(--white);
   background-color: var(--blue--700);
-  border-radius: 11px;
-  box-shadow: 0 24px 20px 0 var(--blue--150);
-  padding: 12.5px 0;
+  /* border-radius: 11px; */
+  border-radius: var(--radius--sm);
+  /* box-shadow: 0 24px 20px 0 var(--blue--150); */
+  box-shadow: 0  1.5em 1.25em 0 var(--blue--150);
+  /* padding: 12.5px 0; */
+  padding: 0.781em 0;
   width: 100%;
 }
 
@@ -242,7 +262,7 @@ button:active {
 
 /* TABLET SCREEN */
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:481px) {
 
   /* |||| BACKGROUND |||| */
 
@@ -253,21 +273,20 @@ button:active {
   /* |||| TEXT |||| */
 
   h2 {
-    font-size: 28px;
+    font-size: var(--font-size--xl);
   }
 
   h3 {
-    font-size: 16px;
     margin: 0 auto 16px;
     max-width: 30ch;
   }
-  
-  h4 {
-    font-size: 16px;
-  }
 
-  h5 {
-    font-size: 16px;
+  h3,
+  h4,
+  h5,
+  .btn-change,
+  .btn-checkout {
+    font-size: var(--font-size--md);
   }
 
   /* |||| CARD |||| */
@@ -286,11 +305,6 @@ button:active {
 
   /* BUTTONS */
 
-  .btn-change,
-  .btn-checkout {
-    font-size: 16px;
-  }
-
   .btn-checkout {
     margin-block-start: 32px;
   }
@@ -302,7 +316,7 @@ button:active {
 
 /* DESKTOP SCREEN */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   
   /* |||| BACKGROUND |||| */
 
