@@ -20,6 +20,10 @@
     <!-- BACKGROUND -->
     <!-- class="bg-pattern" -->
     <picture>
+      <source
+        media="(width >= 1200px)"
+        srcset="./images/pattern-background-desktop.svg"
+      />
       <img
         class="bg-pattern"
         src="./images/pattern-background-mobile.svg"
@@ -75,12 +79,13 @@
             </figure>
             <!-- <h4>Annual Plan</h4>
             <h5>$59.99/year</h5> -->
-            <a href="#">Change</a>
+            <!-- <a href="#">Change</a> -->
+            <button class="btn-change">Change</button>
           </div>
 
           <!-- CHECKOUT -->
-          <button class="btn-pay">Proceed to Payment</button>
-          <button class="btn-cancel">Cancel Order</button>
+          <button class="btn-checkout btn-pay">Proceed to Payment</button>
+          <button class="btn-checkout btn-cancel">Cancel Order</button>
         </article>
       </section>
     </main>
