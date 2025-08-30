@@ -161,6 +161,7 @@ h4 {
   background-color: var(--white);
   /* border-radius: 20px; */
   border-radius: var(--radius--lg);
+  box-shadow: 0 2.5em 0.75em 0 var(--blue--150);
   text-align: center;
   /* max-width: 327px; */
   max-width: 39ch;
@@ -268,7 +269,7 @@ button:active {
 
   .bg-pattern {
     /* top: -70px; */
-    top: -4.375em;
+    /* top: -4.375em; */
   }
 
   /* |||| TEXT |||| */
@@ -319,8 +320,8 @@ button:active {
 
   .btn-pay {
     /* padding: 12px 0; */
-    /* padding: 0.75em 0; */
-    padding: 0.90em 0;
+    padding: 0.75em 0;
+    /* padding: 0.90em 0; */
   }
 
   .btn-cancel {
@@ -336,6 +337,6 @@ button:active {
 
   .bg-pattern {
     /* top: -115px; */
-    /* top: 7.188em; */
+    /* top: -7.188em; */
   }
 }
