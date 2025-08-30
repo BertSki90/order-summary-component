@@ -262,12 +262,13 @@ button:active {
 
 /* TABLET SCREEN */
 
-@media screen and (min-width:481px) {
+@media screen and (min-width: 30.063em /* min-width:481px */) {
 
   /* |||| BACKGROUND |||| */
 
   .bg-pattern {
-    top: -70px;
+    /* top: -70px; */
+    top: -4.375em;
   }
 
   /* |||| TEXT |||| */
@@ -277,7 +278,8 @@ button:active {
   }
 
   h3 {
-    margin: 0 auto 16px;
+    /* margin: 0 auto 16px; */
+    margin: 0 auto 1em;
     max-width: 30ch;
   }
 
@@ -292,35 +294,41 @@ button:active {
   /* |||| CARD |||| */
 
   .card {
-    max-width: 450px;
+    /* max-width: 450px; */
+    max-width: 28.125em;
   }
 
   article {
-    margin: 48px 48px 43px;
+    /* margin: 48px 48px 43px; */
+    margin: 3em 3em 2.688em;
   }
 
   .current-subscription {
-    padding: 24px;
+    /* padding: 24px; */
+    padding: 1.5em;
   }
 
   /* BUTTONS */
 
   .btn-checkout {
-    margin-block-start: 32px;
+    /* margin-block-start: 32px; */
+    margin-block-start: 2em;
   }
 
   .btn-pay {
-    padding: 12px 0;
+    /* padding: 12px 0; */
+    padding: 0.75em 0;
   }
 }
 
 /* DESKTOP SCREEN */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 625em/* min-width: 1000px */) {
   
   /* |||| BACKGROUND |||| */
 
   .bg-pattern {
-    top: -115px;
+    /* top: -115px; */
+    top: 7.188em;
   }
 }
