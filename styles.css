@@ -99,7 +99,7 @@ html {
 }
 
 main {
-  background-color: var(--blue--50);
+  background-color: var(--blue--100);
   display: flex;
   min-height: 100vh;
   justify-content: center;
@@ -275,6 +275,7 @@ button:active {
 
   h2 {
     font-size: var(--font-size--xl);
+    margin-block-end: 0.927em;
   }
 
   h3 {
@@ -300,7 +301,8 @@ button:active {
 
   article {
     /* margin: 48px 48px 43px; */
-    margin: 3em 3em 2.688em;
+    /* margin: 3em 3em 2.688em; */
+    margin: 2.8em 3em 2.088em;
   }
 
   .current-subscription {
@@ -317,7 +319,12 @@ button:active {
 
   .btn-pay {
     /* padding: 12px 0; */
-    padding: 0.75em 0;
+    /* padding: 0.75em 0; */
+    padding: 0.90em 0;
+  }
+
+  .btn-cancel {
+    margin-block-start: 1.3em;
   }
 }
 
@@ -329,6 +336,6 @@ button:active {
 
   .bg-pattern {
     /* top: -115px; */
-    top: 7.188em;
+    /* top: 7.188em; */
   }
 }
